@@ -28,12 +28,15 @@ git clone https://github.com/alexlux58/React-CS-Microservice-App.git
 ### Install Dependencies
 
 Navigate to the src/AuctionService directory and run:
+
 dotnet restore
 
 For the React frontend, navigate to its directory and run:
+
 npm install
 
 ### Run the Application
 
 Use Docker Compose to start all services:
+
 docker-compose up
