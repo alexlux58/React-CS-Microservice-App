@@ -19,10 +19,12 @@ services:
   rabbitmq:
     image: rabbitmq:3-management-alpine
     ports:
-      - 5672:5672
-      - 15672:15672
+      - "5672:5672"
+      # - "5772:5772"
+      - "15672:15672"
     volumes:
       - /var/lib/rabbitmq/data
+    restart: unless-stopped
 # volumes:
 #   pgdata:
 #   mongodata:
